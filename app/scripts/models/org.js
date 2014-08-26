@@ -12,6 +12,8 @@ Gitbrowser.Models = Gitbrowser.Models || {};
         ownedRepos: function() {
             var repos = new Gitbrowser.Collections.Repos;
             repos.url = this.url() + "/repos";
+
+            // this seems to be the least insane way (code-wise) to force a sort.
             repos.fetch({
                 reset: true
             });

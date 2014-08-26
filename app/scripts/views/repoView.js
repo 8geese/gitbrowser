@@ -56,9 +56,6 @@ Gitbrowser.Views = Gitbrowser.Views || {};
         },
 
         render: function () {
-
-            console.log(this.model);
-            console.log(moment());
             this.$el.append(this.template(_.extend(this.model.toJSON(), utils)));
         }
 
